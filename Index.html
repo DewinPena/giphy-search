@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giphy Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Righteous|Roboto&display=swap"rel="stylesheet"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+  <section class="section">
+
+    <div class="container top-search">
+      <div class="columns is-centered">
+          <div class="field has-addons">
+              <div class="control">
+                <input id="search-input"class="input" type="text" placeholder="Search Gifs">
+              </div>
+              <div  id="search" class="control">
+                <a class="button is-info">
+                  Search
+                </a>
+              </div>
+            </div>
+      </div>
+    </div>
+    
+    <div class="container">
+        <div class="columns is-multiline is-centered" id="target-container"></div>
+    </div>
+      
+  </section>
+  
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
