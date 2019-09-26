@@ -2,10 +2,10 @@ $(document).ready(function() {
   
 
   createGrid();
-
-  $( "#search" ).click(function() {
+  $( "#submit" ).click(function() {
     console.log("no")
     getGif();
+    hoverActive();
   });
 
 
@@ -25,13 +25,29 @@ $(document).ready(function() {
         
         for(i in giff){
 
-          $('#g'+i).empty().append("<img src='"+giff[i].images.original.url+"'>");
+          $('#g'+i).empty().append("<img src='"+giff[i].images.original.url+"' class ='imgBox'>");
+          $('#g'+i).append("<div class='urlContainer is-4' ><p class='urlText'>"+giff[i].images.original.url+"</p></div>");
        
            }
       });
     
   }
   
+  function hoverActive(){
+
+    
+    $(".box-style").hover(function () {
+      var hoveredID = this.id;
+     $('#'+hoveredID).addClass("hovered");
+     
+
+  }, 
+  function () {
+    var hoveredID = this.id;
+    $('#'+hoveredID).removeClass("hovered");
+  });
+  }
+
   function createGrid(){
     for(var i = 0; i < 28; i++){
 
