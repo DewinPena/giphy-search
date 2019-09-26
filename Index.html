@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Giphy Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Righteous|Roboto&display=swap"rel="stylesheet"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  </head>
+  <body>
+  <section class="section">
+    <h1 class="title has-text-centered">Giphyed</h1>
+    <div class="container top-search">
+      <div class="columns is-centered">
+        <div class="column is-half field is-grouped">
+          <p class="control is-expanded">
+            <input ID="search-input"class=" input" type="text" placeholder="Search for gifs">
+          </p>
+          <div  id="submit" > 
+            <p class="control">
+            <a class="button is-info">
+              Search
+            </a>
+          </p></div>
+         
+        </div>
+      </div>
+        
+    
+    
+    <div class="container">
+        <div class="columns is-3 is-multiline is-centered" id="target-container"></div>
+    </div>
+      
+  </section>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+     </body>
+</html>
